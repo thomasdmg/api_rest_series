@@ -6,7 +6,7 @@ REQUÊTES HTTP AUTORISEES :
 POST :
 
 login :
-http://localhost/api_rest/auth.php?process=login 
+http://localhost/api_rest_series/auth.php?process=login 
 
 {
     "user":"username",
@@ -15,7 +15,7 @@ http://localhost/api_rest/auth.php?process=login
 
 recherche :
 
-http://localhost/api_rest/index.php?process=research
+http://localhost/api_rest_series/index.php?process=research
 
 {
     "word_list": ["arme","police","etc..."],
@@ -26,7 +26,7 @@ http://localhost/api_rest/index.php?process=research
 récupérer des recommendations : 
 
 <!-- Get_recommendation_lite : Meilleures performances sur un grand nombre de séries mais légèrement moins pertinent --> 
-http://localhost/api_rest/index.php?process=get_recommendation_lite
+http://localhost/api_rest_series/index.php?process=get_recommendation_lite
 
 {
     "user_id":3, <!-- N° de l'utilisateur --> 
@@ -35,7 +35,7 @@ http://localhost/api_rest/index.php?process=get_recommendation_lite
 }
 
 <!-- Get_recommendation_long : Meilleures recommendations mais plus lent sur un grand nombre de séries --> 
-http://localhost/api_rest/index.php?process=get_recommendation_long
+http://localhost/api_rest_series/index.php?process=get_recommendation_long
 
 {
     "user_id":3, <!-- id de l'user --> 
@@ -44,7 +44,7 @@ http://localhost/api_rest/index.php?process=get_recommendation_long
 }
 
 <!-- add_feeback : ajoute un like ou dislike pour un utilisateur donné --> 
-http://localhost/api_rest/index.php?process=add_feedback
+http://localhost/api_rest_series/index.php?process=add_feedback
 
 {
     "serie_id":"73", <!-- N° de la série --> 
@@ -53,7 +53,7 @@ http://localhost/api_rest/index.php?process=add_feedback
 }
 
 <!-- get_like_of_user : Récupère les séries liké par un utilisateur --> 
-http://localhost/api_rest/index.php?process=get_like_of_user
+http://localhost/api_rest_series/index.php?process=get_like_of_user
 
 {
     "user_id":3, <!-- N° de l'utilisateur --> 
@@ -61,7 +61,7 @@ http://localhost/api_rest/index.php?process=get_like_of_user
 }
 
 <!-- get_dislike_of_user : Récupère les séries disliké par un utilisateur --> 
-http://localhost/api_rest/index.php?process=get_dislike_of_user
+http://localhost/api_rest_series/index.php?process=get_dislike_of_user
 
 {
     "user_id":3,
